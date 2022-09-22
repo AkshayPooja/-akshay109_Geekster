@@ -1,0 +1,75 @@
+1.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-till-n-for-this-series-511172329-
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        int i= 5;
+        
+        while(i<=n){
+           // int res = 6*i;
+            System.out.println(i);
+            i=i+6;
+        }
+    }
+}
+
+2.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-from-n-to-3-using-while-loop
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=n;
+        while(i<3){
+            System.out.println(i);
+            i++;
+      
+        }
+    }
+}
+
+3.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-n-to-x
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int x = sc.nextInt();
+        for(int i=n;i>=x;i--)
+            System.out.println(i);
+    }
+}
+
+4.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/reverse-table-of-6.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=10;i>=11-n;i--)
+        System.out.println(i*6);
+    }
+}
