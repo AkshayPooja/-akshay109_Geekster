@@ -1,0 +1,98 @@
+1.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-series-6.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=n;i>0;i=i-6){
+            System.out.print(i+" ");
+        }
+    }
+}
+
+2.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-series-7.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+       Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        
+        
+        for(int i=n;i>=2;i=i-3*k){
+            System.out.print(i +" ");
+        }
+    }
+}
+
+3.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-alphabets-2.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     char c;
+
+    for(c = 'A'; c <= 'Z'; ++c)
+      System.out.print(c + " ");   
+    }
+}
+
+4.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-the-alphabet-series.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+ 
+          for(int i = 0; i < 26; i++) {
+            if(i % 2 == 0) {
+                for(int j = 1; j <=3; j++) System.out.print((char)(i + 'A'));
+            }else  for(int j = 1; j <=2; j++) System.out.print((char)(i + 'a'));
+            System.out.println();
+          }
+        }
+    }
+    
+    5.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-the-series-of-character.
+    
+    import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+   for(int i='Z'; i>='A'; i--){
+            if(i!='A'){
+                System.out.print((char)(i)+",");
+            
+                System.out.print((char)(i+32)+",");
+            }
+          else{
+              System.out.print((char)(i)+",");
+              System.out.print((char)(i+32)+".");
+          
+          }
+   }
+            
+        }
+    }
