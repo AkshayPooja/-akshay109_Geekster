@@ -1,0 +1,231 @@
+1.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-series-6.
+
+import java.io.;
+import java.util.;
+
+public class Solution {
+
+public static void main(String[] args) {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc = new Scanner(System.in);
+    int n=sc.nextInt();
+    for(int i=n;i>0;i=i-6){
+        System.out.print(i+" ");
+    }
+}
+
+2.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-series-7.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+       Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        
+        
+        for(int i=n;i>=2;i=i-3*k){
+            System.out.print(i +" ");
+        }
+    }
+}
+
+3.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-alphabets-2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     char c;
+
+    for(c = 'A'; c <= 'Z'; ++c)
+      System.out.print(c + " ");   
+    }
+}
+
+4.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-the-alphabet-series
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+ 
+          for(int i = 0; i < 26; i++) {
+            if(i % 2 == 0) {
+                for(int j = 1; j <=3; j++) System.out.print((char)(i + 'A'));
+            }else  for(int j = 1; j <=2; j++) System.out.print((char)(i + 'a'));
+            System.out.println();
+          }
+        }
+    }
+    
+    5.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-the-series-of-character.
+    
+    import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+   for(int i='Z'; i>='A'; i--){
+            if(i!='A'){
+                System.out.print((char)(i)+",");
+            
+                System.out.print((char)(i+32)+",");
+            }
+          else{
+              System.out.print((char)(i)+",");
+              System.out.print((char)(i+32)+".");
+          
+          }
+   }
+            
+        }
+    }
+    
+    6.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-vowel-1
+    
+    import java.io.;
+import java.util.;
+
+public class Solution {
+
+public static void main(String[] args) {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc= new Scanner(System.in);
+    String str=sc.next();
+    for(int i=0;i<str.length(); i++){
+        if(str.charAt(i) == 'a'  || str.charAt(i) == 'e' || str.charAt(i)=='i' || str.charAt(i)== 'o' || str.charAt(i)=='u'){
+        
+        System.out.println(str.charAt(i));
+        }
+    }
+}
+
+7.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-power-of-17
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        long ans=1;
+        for(int i=1;i<=n;i++){
+            ans=ans*17;
+            System.out.print(ans+" ");
+        }
+    }
+}
+
+8.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-numbers-7
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=1;
+        while(i<=n){
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+8.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/fizzbuzz-problems
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+         if(i%3==0 && i%7==0){
+            System.out.print("FizzBuzz"+" ");
+        }
+        else if(i%7==0){
+            System.out.print("Buzz"+" ");
+        }
+        else if (i%3==0){
+            System.out.print("Fizz"+" ");
+            
+        }
+        else{
+            System.out.print(i+" ");
+           }
+        }
+    }
+}
+
+9.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/running-sum-and-average
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for (int i=1;i<=n;i++){
+            sum=sum+i;
+            
+        }
+           System.out.println(sum);
+        int avg=sum/n;
+           System.out.println(avg);
+    }
+}
+
+10.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-fibonacci-series-2
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+       int f=0, prev=1, sum=0;
+            System.out.print(f+" ");
+    for(int i=0;i<n-2;i++){
+        sum = f + prev;
+        f=prev;
+        prev=sum;
+        if(i%2==0){
+                System.out.print(sum+" ");
+              }
+            }
+        }
+    }
