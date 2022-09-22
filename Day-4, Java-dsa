@@ -1,0 +1,129 @@
+1.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/gkstr06-greater-number.
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int a1=sc.nextInt();
+        if(a>a1){
+         System.out.println(a);
+        }else{
+            System.out.println(a1);
+            }
+    }
+}
+
+2.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/gkstr04-even-or-odd.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+            //System.out.println("Enter a Number:");
+        int num =sc.nextInt();
+        
+        if(num % 2==0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+            
+    }
+}
+
+3.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/tax-or-not.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int income=sc.nextInt();
+        if(income<500000  )
+            System.out.println("No tax to be paid");
+            else
+                 System.out.println("Tax to be paid");
+    }
+}
+
+4. https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/grace-marks-1
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+  Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n<33)
+            System.out.println(n+4);
+            else
+                System.out.println(n);
+              
+    
+    }
+}
+   
+5.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-age-bracket.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>=70){
+            System.out.println("Super Senior Citizen");
+        }else if (a<70 && a>=59){
+        System.out.println("Senior Citizen");
+        }else if(a<59 && a>=18){
+           System.out.println("Adult");
+        }else if(a<18 && a>1){
+         System.out.println("Underage");
+        }else{
+           System.out.println("New Born");
+        }
+    }
+}
+6.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-final-salary-given-age.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc= new Scanner(System.in);
+        int age =  sc.nextInt();
+        int salary = sc.nextInt();
+        
+        if (age>60){
+            salary = (salary + 1000);
+            System.out.println(salary);
+        }
+        else if(age>40 && age<=60){
+            salary = salary + 500;
+            System.out.println(salary);
+        }
+        else if (age<=40){
+            System.out.println(salary);
+        }
+          
+    }
+}
