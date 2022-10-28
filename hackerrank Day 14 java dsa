@@ -1,0 +1,90 @@
+1. https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-odd-from-n-to-1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=n;
+        while(i>=1){
+            if(i%2!=0){
+            System.out.println(i);
+            
+            }
+            i--;
+        }
+    }
+}
+
+2. https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-the-series-3
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         Scanner sc= new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        for(int i=n;i>0;i=i-5){
+            System.out.print(i+" ");
+        }
+    }
+}
+
+3.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/print-n-n-3k-n-6k-n-12k-
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+         Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        int k=scn.nextInt();
+        int m=scn.nextInt();
+
+        int i=n;
+        while (i>=m)
+        {
+            System.out.print(i+" ");
+            i=i-3*k;
+        }
+    }
+}
+
+4.https://www.hackerrank.com/contests/aug22-java-dsa-homework-challenges/challenges/find-permutation-1
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int factorial(int n) {
+      int f;
+
+      for(f = 1; n > 1; n--){
+         f *= n;
+      }
+      return f;
+   }
+   static int npr(int n,int r) {
+      return factorial(n)/factorial(n-r);
+   }
+   public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int r = sc.nextInt();
+      System.out.println(npr(n,r));
+        
+    }
+}
